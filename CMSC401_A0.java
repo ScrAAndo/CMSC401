@@ -19,8 +19,6 @@
 
 
 import java.util.Scanner;
-import java.util.ArrayList;
-
 
 public class CMSC401_A0 {
     public static void main(String[] args) {
