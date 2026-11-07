@@ -74,10 +74,29 @@ public class CSMC401_A3 {
             int[] current = Q.poll();
             int currentDist = current[0];
             int u = current[1];
-            
+
+            //Skip vertex if processed
+            if (S[u]) continue;
+
+            //S = S U {u}
+            S[u] = true;
+
+            if (u == dest) break;
+
+            // for each vertex v in G.Adj[u]
+            for (int[] edge : adjList.get(u)) {
+                int v = edge[0];
+                int weight = edge[1];
+
+                //RELAX
+                if (!S[v] && d[v] > d[u] + weight) {
+                    d[v] = d[u] + weight;
+                    pi[v] = u;
+                    Q.add(new int[]{d[v], v});
+                }
+            }
 
         }
-
 
         //2. build a directed graph from those highways only
 
