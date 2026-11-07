@@ -21,8 +21,6 @@ import java.util.PriorityQueue;
 import java.util.Scanner;
 
 
-
-
 public class CSMC401_A3 {
     public static void main(String[] args) {
         
