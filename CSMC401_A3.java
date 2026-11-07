@@ -168,5 +168,7 @@ public class CSMC401_A3 {
 
             maxFlow += pathFlow;
         }
+        System.out.println(maxFlow);
+
     }
 }
