@@ -75,6 +75,7 @@ public class CSMC401_A3 {
         while(!Q.isEmpty()) {
             //u = EXTRACT-MIN(Q)
             int[] current = Q.poll();
+            @SuppressWarnings("unused")
             int currentDist = current[0];
             int u = current[1];
 
